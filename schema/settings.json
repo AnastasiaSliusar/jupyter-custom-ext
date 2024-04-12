@@ -1,0 +1,35 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Custom settings",
+  "description": "custom-settings settings.",
+  "type": "object",
+  "properties": {
+    "limit": {
+      "type": "integer",
+      "title": "Limit",
+      "description": "This is an example of an integer setting.",
+      "default": 80
+    },
+    "flag": {
+      "type": "boolean",
+      "title": "Simple flag",
+      "description": "This is an example of a boolean setting.",
+      "default": false
+    }
+  },
+  "additionalProperties": false,
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "jp-mainmenu-example-settings",
+        "label": "Settings Test",
+        "rank": 80,
+        "items": [
+          {
+            "command": "custom-settings:toggle-flag"
+          }
+        ]
+      }
+    ]
+  }
+}
